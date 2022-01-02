@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- tailwind core CSS -->
+    <link rel="stylesheet" href="public/assets/css/app.css">
+</head>
+<body>
+
+<header class="menu flex flex-col">
+    <div class="py-2 w-full flex lg:hidden justify-between items-center">
+        <a href="javascript:void(0);" class="text-xl font-bold text-primary tracking-wide uppercase">
+            logo
+        </a>
+        <button class="p-1 hamburger-menu">
+             <span class="h-1 w-8 block my-2 bg-primary smooth-transition"></span>
+             <span class="h-1 w-8 block my-2 bg-primary smooth-transition"></span>
+             <span class="h-1 w-8 block my-2 bg-primary smooth-transition"></span>
+        </button>
+    </div>
+    <div class="menu-list pb-3 lg:pb-0 hidden lg:flex justify-between flex-col lg:flex-row w-full space-y-3 md:space-y-4 lg:space-y-0">
+        <ul class="flex items-center flex-col lg:flex-row space-y-3 md:space-y-4 lg:space-y-0 lg:space-x-8">
+            <li><a href="javascript:void(0);" class="menu-item active">ALL MODELS</a></li>
+            <li><a href="javascript:void(0);" class="menu-item">TOYOTA</a></li>
+        </ul>
+        <ul class="flex items-center flex-col lg:flex-row space-y-3 md:space-y-4 lg:space-y-0 lg:space-x-8">
+            <li><a href="javascript:void(0);" class="menu-item">NISSAN</a></li>
+            <li><a href="javascript:void(0);" class="menu-item">MAZDA</a></li>
+            <li><a href="javascript:void(0);" class="menu-item">TOYOTA</a></li>
+            <li><a href="javascript:void(0);" class="menu-item">HONDA</a></li>
+            <li><a href="javascript:void(0);" class="menu-item">EUROPEAN</a></li>
+            <li class="lg:pl-4">
+                <a href="javascript:void(0);"
+                   class="primary-button smooth-transition font-medium button-shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24"
+                         stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="7 10 12 4 17 10"/>
+                        <path d="M21 10l-2 8a2 2.5 0 0 1 -2 2h-10a2 2.5 0 0 1 -2 -2l-2 -8z"/>
+                        <circle cx="12" cy="15" r="2"/>
+                    </svg>
+                    <span class="inline-block lg:hidden xl:inline-block ml-1.5">my cart</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);"
+                   class="primary-button smooth-transition font-medium button-shadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24"
+                         stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"/>
+                    </svg>
+                    <span class="inline-block lg:hidden xl:inline-block ml-1.5">register / sign in</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<div class="overflow-hidden">
+    <div class="hero-slider mx-auto">
+        <div class="hero-slide relative">
+            <img src="public/assets/images/car-slides/car-slide1.png" alt="car image"/>
+        </div>
+
+        <div class="hero-slide relative">
+            <img src="public/assets/images/car-slides/car-slide1.png" alt="car image"/>
+        </div>
+
+        <div class="hero-slide relative">
+            <img src="public/assets/images/car-slides/car-slide1.png" alt="car image"/>
+        </div>
+
+        <div class="hero-slide relative">
+            <img src="public/assets/images/car-slides/car-slide1.png" alt="car image"/>
+        </div>
+
+        <div class="hero-slide relative">
+            <img src="public/assets/images/car-slides/car-slide1.png" alt="car image"/>
+        </div>
+
+        <div class="hero-slide relative">
+            <img src="public/assets/images/car-slides/car-slide1.png" alt="car image"/>
+        </div>
+    </div>
+</div>
+
+
+<div class="container py-10 lg:py-14 search-section flex flex-wrap items-center justify-center lg:justify-between">
+    <form class="mb-8 lg:mb-0 w-full max-w-[280px] xl:max-w-[320px] flex items-center flex-shrink-0 lg:order-2">
+        <input type="text"
+               class="w-full h-12 px-4 py-2.5 flex-grow text-sm lg:text-base text-[#7f7e7e] border border-[#7f7e7e] border-r-0 focus:border-primary ring-0 focus:ring-2 focus:ring-primary focus:ring-opacity-20 outline-none focus:outline-none"
+               placeholder="Search Keyword or Part Number"/>
+        <button type="submit" class="flex-shrink-0 h-12 p-3 py-2 bg-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-7 h-7 lg:w-8 lg:h-8" viewBox="0 0 24 24"
+                 stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="10" cy="10" r="7"/>
+                <line x1="21" y1="21" x2="15" y2="15"/>
+            </svg>
+        </button>
+    </form>
+
+    <ul class="flex flex-wrap items-center justify-center lg:justify-start justify-center xl:flex-grow space-x-2 lg:order-1">
+        <li><a href="javascript:void(0);" class="primary-button smooth-transition mb-2 md:my-0"> home parts </a></li>
+        <li><a href="javascript:void(0);" class="primary-button smooth-transition mb-2 md:my-0"> PARTS </a></li>
+        <li><a href="javascript:void(0);" class="primary-button smooth-transition mb-2 md:my-0"> P9MS APPAREL </a></li>
+        <li><a href="javascript:void(0);" class="primary-button smooth-transition mb-2 md:my-0"> P9MS DRIVER’S
+            SELECTION </a></li>
+        <li><a href="javascript:void(0);" class="primary-button smooth-transition mb-2 md:my-0"> VARIOUS
+            ACCESSORIES </a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="my-5 lg:mb-10 relative text-center">
+        <div class="h-[2px] w-full bg-black block absolute top-1/2 left-0 transform -translate-y-1/2"></div>
+        <h2 class="features-title">
+            FEATURED PARTS & ACCESSORIES</h2>
+    </div>
+
+    <div class="mb-10 md:mb-16 logo-slider flex items-center justify-between overflow-auto">
+        <div class="mx-8 lg:mx-10">
+            <img src="public/assets/images/logos/logo-1.png" class="max-w-[130px] max-h-[100px] mx-auto" alt="logo"/>
+        </div>
+
+        <div class="mx-8 lg:mx-10">
+            <img src="public/assets/images/logos/logo-2.png" class="max-w-[130px] max-h-[100px] mx-auto" alt="logo"/>
+        </div>
+
+        <div class="mx-8 lg:mx-10">
+            <img src="public/assets/images/logos/logo-3.png" class="max-w-[130px] max-h-[100px] mx-auto" alt="logo"/>
+        </div>
+
+        <div class="mx-8 lg:mx-10">
+            <img src="public/assets/images/logos/logo-4.png" class="max-w-[130px] max-h-[100px] mx-auto" alt="logo"/>
+        </div>
+
+        <div class="mx-8 lg:mx-10">
+            <img src="public/assets/images/logos/logo-5.png" class="max-w-[130px] max-h-[100px] mx-auto" alt="logo"/>
+        </div>
+
+        <div class="mx-8 lg:mx-10">
+            <img src="public/assets/images/logos/logo-6.png" class="max-w-[130px] max-h-[100px] mx-auto" alt="logo"/>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap lg:flex-nowrap mb-20 md:-mx-4">
+        <div class="mb-6 lg:mb-0 w-full md:w-6/12 lg:w-4/12 xl:w-4/12 md:px-4 space-y-6 md:space-y-8 lg:order-1">
+            <div class="car-card relative overflow-hidden">
+                <img src="public/assets/images/cars-img/car-img-1.jpeg" alt="car img">
+                <div class="card-body leading-relaxed">
+                    <h4 class="mb-4 text-xl uppercase">lorem ipsum</h4>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae
+                        consequatur consequuntur dolorem, eius error fugiat harum.</p>
+                </div>
+            </div>
+
+            <div class="car-card relative overflow-hidden">
+                <img src="public/assets/images/cars-img/car-img-2.jpeg" alt="car img">
+                <div class="card-body leading-relaxed">
+                    <h4 class="mb-4 text-xl uppercase">lorem ipsum</h4>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae
+                        consequatur consequuntur dolorem, eius error fugiat harum.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-6 lg:mb-0 w-full md:w-6/12 lg:w-4/12 xl:w-4/12 md:px-4 space-y-6 md:space-y-8 lg:order-3">
+            <div class="car-card relative overflow-hidden">
+                <img src="public/assets/images/cars-img/car-img-4.webp" alt="car img">
+                <div class="card-body leading-relaxed">
+                    <h4 class="mb-4 text-xl uppercase">lorem ipsum</h4>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae
+                        consequatur consequuntur dolorem, eius error fugiat harum.</p>
+                </div>
+            </div>
+
+            <div class="car-card relative overflow-hidden">
+                <img src="public/assets/images/cars-img/car-img-5.jpeg" alt="car img">
+                <div class="card-body leading-relaxed">
+                    <h4 class="mb-4 text-xl uppercase">lorem ipsum</h4>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae
+                        consequatur consequuntur dolorem, eius error fugiat harum.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-6 lg:mb-0 w-full lg:w-5/12 xl:w-6/12 md:px-4 space-y-6 md:space-y-8 lg:order-2">
+            <div class="car-card card-full-height relative overflow-hidden">
+                <img src="public/assets/images/cars-img/car-img-3.jpeg" alt="car img">
+                <div class="card-body leading-relaxed">
+                    <h4 class="mb-4 text-xl uppercase">lorem ipsum</h4>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae
+                        consequatur consequuntur dolorem, eius error fugiat harum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wheels-slider mb-10">
+        <div class="md:px-4">
+            <div class="wheel-img-box">
+                <img src="public/assets/images/wheels/mac-wheel-1.png" alt="wheel image"/>
+            </div>
+            <p>enkei</p>
+        </div>
+
+        <div class="md:px-4">
+            <div class="wheel-img-box">
+                <img src="public/assets/images/wheels/mac-wheel-2.png" alt="wheel image"/>
+            </div>
+            <p>black rhino</p>
+        </div>
+
+        <div class="md:px-4">
+            <div class="wheel-img-box">
+                <img src="public/assets/images/wheels/mac-wheel-6.png" alt="wheel image"/>
+            </div>
+            <p>vrosteiner</p>
+        </div>
+
+        <div class="md:px-4">
+            <div class="wheel-img-box">
+                <img src="public/assets/images/wheels/mac-wheel-3.png" alt="wheel image"/>
+            </div>
+            <p>method race wheels</p>
+        </div>
+
+        <div class="md:px-4">
+            <div class="wheel-img-box">
+                <img src="public/assets/images/wheels/mac-wheel-1.png" alt="wheel image"/>
+            </div>
+            <p>enkei</p>
+        </div>
+
+        <div class="md:px-4">
+            <div class="wheel-img-box">
+                <img src="public/assets/images/wheels/mac-wheel-4.png" alt="wheel image"/>
+            </div>
+            <p>fifteen52</p>
+        </div>
+
+        <div class="md:px-4">
+            <div class="wheel-img-box">
+                <img src="public/assets/images/wheels/mac-wheel-5.png" alt="wheel image"/>
+            </div>
+            <p>titan 7</p>
+        </div>
+
+        <div class="md:px-4">
+            <div class="wheel-img-box">
+                <img src="public/assets/images/wheels/mac-wheel-6.png" alt="wheel image"/>
+            </div>
+            <p>vrosteiner</p>
+        </div>
+
+        <div class="md:px-4">
+            <div class="wheel-img-box">
+                <img src="public/assets/images/wheels/mac-wheel-1.png" alt="wheel image"/>
+            </div>
+            <p>enkei</p>
+        </div>
+
+        <div class="md:px-4">
+            <div class="wheel-img-box">
+                <img src="public/assets/images/wheels/mac-wheel-4.png" alt="wheel image"/>
+            </div>
+            <p>fifteen52</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="public/assets/js/app.js"></script>
+</body>
+</html>

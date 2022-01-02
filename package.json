@@ -1,0 +1,27 @@
+{
+    "name": "latest",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "dependencies": {
+        "jquery": "^3.5.1",
+        "slick-carousel": "^1.8.1",
+        "tailwindcss": "^3.0.8"
+    },
+    "devDependencies": {
+        "laravel-mix": "^6.0.3",
+        "postcss": "^8.2.1",
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.30.0",
+        "sass-loader": "^8.0.2"
+    }
+}
