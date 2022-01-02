@@ -25,13 +25,13 @@
             logo
         </a>
         <button class="p-1 hamburger-menu">
-             <span class="h-1 w-8 block my-2 bg-primary smooth-transition"></span>
-             <span class="h-1 w-8 block my-2 bg-primary smooth-transition"></span>
-             <span class="h-1 w-8 block my-2 bg-primary smooth-transition"></span>
+             <span class=""></span>
+             <span class=""></span>
+             <span class=""></span>
         </button>
     </div>
-    <div class="menu-list pb-3 lg:pb-0 hidden lg:flex justify-between flex-col lg:flex-row w-full space-y-3 md:space-y-4 lg:space-y-0">
-        <ul class="flex items-center flex-col lg:flex-row space-y-3 md:space-y-4 lg:space-y-0 lg:space-x-8">
+    <div class="menu-list">
+        <ul class="breadcrumb flex items-center flex-col lg:flex-row space-y-3 md:space-y-4 lg:space-y-0 lg:space-x-8">
             <li><a href="javascript:void(0);" class="menu-item active">ALL MODELS</a></li>
             <li><a href="javascript:void(0);" class="menu-item">TOYOTA</a></li>
         </ul>
@@ -74,39 +74,65 @@
     </div>
 </header>
 
-<div class="overflow-hidden">
-    <div class="hero-slider mx-auto">
+<div class="overflow-hidden slider-shadow">
+    <div class="max-w-sm md:max-w-screen-sm lg:max-w-screen-lg ml-auto mr-20 lg:mr-40">
+        <div class="hero-slider mx-auto">
         <div class="hero-slide relative">
-            <img src="public/assets/images/car-slides/car-slide1.png" alt="car image"/>
+            <img src="public/assets/images/car-slides/car-slide1.png" class="banner-img" alt="car image"/>
+
+            <div class="block absolute left-6 bottom-10 z-10">
+                <img src="public/assets/images/cars-logo.png" class="logo-img" alt="car logo">
+            </div>
         </div>
 
         <div class="hero-slide relative">
-            <img src="public/assets/images/car-slides/car-slide1.png" alt="car image"/>
+            <img src="public/assets/images/car-slides/car-slide2.jpeg" class="banner-img" alt="car image"/>
+
+            <div class="block absolute left-6 bottom-10 z-10">
+                <img src="public/assets/images/cars-logo.png" class="logo-img" alt="car logo">
+            </div>
         </div>
 
         <div class="hero-slide relative">
-            <img src="public/assets/images/car-slides/car-slide1.png" alt="car image"/>
+            <img src="public/assets/images/car-slides/car-slide3.jpeg" class="banner-img" alt="car image"/>
+
+            <div class="block absolute left-6 bottom-10 z-10">
+                <img src="public/assets/images/cars-logo.png" class="logo-img" alt="car logo">
+            </div>
         </div>
 
         <div class="hero-slide relative">
-            <img src="public/assets/images/car-slides/car-slide1.png" alt="car image"/>
+            <img src="public/assets/images/car-slides/car-slide1.png" class="banner-img" alt="car image"/>
+
+            <div class="block absolute left-6 bottom-10 z-10">
+                <img src="public/assets/images/cars-logo.png" class="logo-img" alt="car logo">
+            </div>
         </div>
 
         <div class="hero-slide relative">
-            <img src="public/assets/images/car-slides/car-slide1.png" alt="car image"/>
+            <img src="public/assets/images/car-slides/car-slide4.jpg" class="banner-img" alt="car image"/>
+
+            <div class="block absolute left-6 bottom-10 z-10">
+                <img src="public/assets/images/cars-logo.png" class="logo-img" alt="car logo">
+            </div>
         </div>
 
         <div class="hero-slide relative">
-            <img src="public/assets/images/car-slides/car-slide1.png" alt="car image"/>
+            <img src="public/assets/images/car-slides/car-slide5.png" class="banner-img" alt="car image"/>
+
+            <div class="block absolute left-6 bottom-10 z-10">
+                <img src="public/assets/images/cars-logo.png" class="logo-img" alt="car logo">
+            </div>
         </div>
+    </div>
     </div>
 </div>
 
 
-<div class="container py-10 lg:py-14 search-section flex flex-wrap items-center justify-center lg:justify-between">
-    <form class="mb-8 lg:mb-0 w-full max-w-[280px] xl:max-w-[320px] flex items-center flex-shrink-0 lg:order-2">
+<div class="container features-section search-section">
+    <form class="search-from">
         <input type="text"
-               class="w-full h-12 px-4 py-2.5 flex-grow text-sm lg:text-base text-[#7f7e7e] border border-[#7f7e7e] border-r-0 focus:border-primary ring-0 focus:ring-2 focus:ring-primary focus:ring-opacity-20 outline-none focus:outline-none"
+               class="search-input"
                placeholder="Search Keyword or Part Number"/>
         <button type="submit" class="flex-shrink-0 h-12 p-3 py-2 bg-primary">
             <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-7 h-7 lg:w-8 lg:h-8" viewBox="0 0 24 24"
@@ -118,7 +144,7 @@
         </button>
     </form>
 
-    <ul class="flex flex-wrap items-center justify-center lg:justify-start justify-center xl:flex-grow space-x-2 lg:order-1">
+    <ul class="">
         <li><a href="javascript:void(0);" class="primary-button smooth-transition mb-2 md:my-0"> home parts </a></li>
         <li><a href="javascript:void(0);" class="primary-button smooth-transition mb-2 md:my-0"> PARTS </a></li>
         <li><a href="javascript:void(0);" class="primary-button smooth-transition mb-2 md:my-0"> P9MS APPAREL </a></li>
@@ -129,14 +155,17 @@
     </ul>
 </div>
 
+
+
 <div class="container">
     <div class="my-5 lg:mb-10 relative text-center">
-        <div class="h-[2px] w-full bg-black block absolute top-1/2 left-0 transform -translate-y-1/2"></div>
+        <div class="features-line"></div>
         <h2 class="features-title">
             FEATURED PARTS & ACCESSORIES</h2>
     </div>
 
-    <div class="mb-10 md:mb-16 logo-slider flex items-center justify-between overflow-auto">
+<!--    logos section-->
+    <div class="logo-slider">
         <div class="mx-8 lg:mx-10">
             <img src="public/assets/images/logos/logo-1.png" class="max-w-[130px] max-h-[100px] mx-auto" alt="logo"/>
         </div>
@@ -161,54 +190,56 @@
             <img src="public/assets/images/logos/logo-6.png" class="max-w-[130px] max-h-[100px] mx-auto" alt="logo"/>
         </div>
     </div>
+<!--  END  logos section-->
+
 
     <div class="flex flex-wrap lg:flex-nowrap mb-20 md:-mx-4">
         <div class="mb-6 lg:mb-0 w-full md:w-6/12 lg:w-4/12 xl:w-4/12 md:px-4 space-y-6 md:space-y-8 lg:order-1">
-            <div class="car-card relative overflow-hidden">
+            <div class="car-card">
                 <img src="public/assets/images/cars-img/car-img-1.jpeg" alt="car img">
-                <div class="card-body leading-relaxed">
-                    <h4 class="mb-4 text-xl uppercase">lorem ipsum</h4>
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae
+                <div class="card-body">
+                    <h4>lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae
                         consequatur consequuntur dolorem, eius error fugiat harum.</p>
                 </div>
             </div>
 
-            <div class="car-card relative overflow-hidden">
+            <div class="car-card">
                 <img src="public/assets/images/cars-img/car-img-2.jpeg" alt="car img">
-                <div class="card-body leading-relaxed">
-                    <h4 class="mb-4 text-xl uppercase">lorem ipsum</h4>
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae
+                <div class="card-body">
+                    <h4>lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae
                         consequatur consequuntur dolorem, eius error fugiat harum.</p>
                 </div>
             </div>
         </div>
 
         <div class="mb-6 lg:mb-0 w-full md:w-6/12 lg:w-4/12 xl:w-4/12 md:px-4 space-y-6 md:space-y-8 lg:order-3">
-            <div class="car-card relative overflow-hidden">
+            <div class="car-card">
                 <img src="public/assets/images/cars-img/car-img-4.webp" alt="car img">
-                <div class="card-body leading-relaxed">
-                    <h4 class="mb-4 text-xl uppercase">lorem ipsum</h4>
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae
+                <div class="card-body">
+                    <h4>lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae
                         consequatur consequuntur dolorem, eius error fugiat harum.</p>
                 </div>
             </div>
 
-            <div class="car-card relative overflow-hidden">
+            <div class="car-card">
                 <img src="public/assets/images/cars-img/car-img-5.jpeg" alt="car img">
-                <div class="card-body leading-relaxed">
-                    <h4 class="mb-4 text-xl uppercase">lorem ipsum</h4>
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae
+                <div class="card-body">
+                    <h4>lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae
                         consequatur consequuntur dolorem, eius error fugiat harum.</p>
                 </div>
             </div>
         </div>
 
         <div class="mb-6 lg:mb-0 w-full lg:w-5/12 xl:w-6/12 md:px-4 space-y-6 md:space-y-8 lg:order-2">
-            <div class="car-card card-full-height relative overflow-hidden">
+            <div class="car-card card-full-height">
                 <img src="public/assets/images/cars-img/car-img-3.jpeg" alt="car img">
-                <div class="card-body leading-relaxed">
-                    <h4 class="mb-4 text-xl uppercase">lorem ipsum</h4>
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae
+                <div class="card-body">
+                    <h4>lorem ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi beatae
                         consequatur consequuntur dolorem, eius error fugiat harum.</p>
                 </div>
             </div>

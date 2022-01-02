@@ -25,28 +25,22 @@ $(document).ready(function () {
   });
   $('.hero-slider').slick({
     dots: false,
-    arrows: false,
+    arrows: true,
     infinite: true,
     speed: 200,
     autoplay: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    variableWidth: true // responsive: [
-    //     {
-    //         breakpoint: 991,
-    //         settings: {
-    //             slidesToShow: 4
-    //         }
-    //     },
-    //     {
-    //         breakpoint: 768,
-    //         settings: {
-    //             slidesToShow: 3
-    //         }
-    //     },
-    // ]
-
+    variableWidth: true,
+    prevArrow: "<button type='button' class='slick-prev pull-left'><img src='public/assets/images/arrow-prev.png' alt='prev image' /></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><img src='public/assets/images/arrow-next.png' alt='prev image' /></button>",
+    responsive: [{
+      breakpoint: 1024,
+      settings: {
+        arrows: false
+      }
+    }]
   });
   $('.wheels-slider').slick({
     dots: false,
