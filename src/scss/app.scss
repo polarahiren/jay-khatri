@@ -16,7 +16,7 @@ body{
 }
 
 header.menu{
-    @apply px-6 lg:px-10 bg-white flex justify-between items-center relative;
+    @apply px-6 lg:px-10 bg-white flex justify-between items-center relative z-[99];
     background-image: url("/assets/images/navbar-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
