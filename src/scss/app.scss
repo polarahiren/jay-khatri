@@ -239,14 +239,18 @@ header.menu{
         }
     }
 
-    .slick-slide{
-        transform: skew(-25deg) scale(1.1);
-    }
-    img.banner-img{
-        transform: skew(25deg) scale(1.5);
-    }
-    .logo-img{
-        transform: skew(25deg);
+    .hero-slider {
+        .slick-slide {
+            transform: skew(-25deg) scale(1.1);
+        }
+
+        img.banner-img {
+            transform: skew(25deg) scale(1.5);
+        }
+
+        .logo-img {
+            transform: skew(25deg);
+        }
     }
 }
 

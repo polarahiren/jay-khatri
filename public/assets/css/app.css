@@ -1660,15 +1660,13 @@ header.menu .hamburger-menu.active span:last-child {
     transform: translateY(-50%);
   }
 
-  .slick-slide {
+  .hero-slider .slick-slide {
     transform: skew(-25deg) scale(1.1);
   }
-
-  img.banner-img {
+  .hero-slider img.banner-img {
     transform: skew(25deg) scale(1.5);
   }
-
-  .logo-img {
+  .hero-slider .logo-img {
     transform: skew(25deg);
   }
 }
