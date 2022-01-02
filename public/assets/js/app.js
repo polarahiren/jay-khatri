@@ -28,7 +28,7 @@ $(document).ready(function () {
     arrows: true,
     infinite: true,
     speed: 200,
-    autoplay: false,
+    autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,

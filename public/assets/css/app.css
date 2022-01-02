@@ -431,8 +431,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ml-auto{
   margin-left: auto;
 }
-.mr-20{
-  margin-right: 5rem;
+.mr-auto{
+  margin-right: auto;
 }
 .mb-2{
   margin-bottom: 0.5rem;
@@ -448,9 +448,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mr-6{
   margin-right: 1.5rem;
-}
-.ml-0{
-  margin-left: 0px;
 }
 .mr-0{
   margin-right: 0px;
@@ -642,6 +639,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -649,10 +650,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .py-2\.5{
   padding-top: 0.625rem;
@@ -1167,11 +1164,15 @@ header.menu .hamburger-menu.active span:last-child {
   border-radius: 0.5rem;
 }
 
-.hero-slider{
-  margin-left: 0px;
-  width: 400px;
+.slider-section{
+  position: relative;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.hero-slider{
+  position: static;
+  width: 400px;
 }
 
 @media (min-width: 768px){
@@ -1187,6 +1188,9 @@ header.menu .hamburger-menu.active span:last-child {
 }
 
 @media (min-width: 1280px){
+  .hero-slider{
+    margin-left: 0px;
+  }
   .hero-slider{
     width: 1000px;
   }
@@ -1237,7 +1241,6 @@ header.menu .hamburger-menu.active span:last-child {
 }
 .hero-slider .slick-slide {
   transition: 0.4s all ease-in-out;
-  transform: skew(-25deg) scale(1.1);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 .hero-slider .hero-slide{
@@ -1302,12 +1305,8 @@ header.menu .hamburger-menu.active span:last-child {
     height: 600px;
   }
 }
-.hero-slider img.banner-img {
-  transform: skew(25deg) scale(1.5);
-}
 .hero-slider .logo-img{
   max-width: 250px;
-  transform: skew(25deg);
 }
 .hero-slider .slick-prev, .hero-slider .slick-next{
   z-index: 99;
@@ -1316,6 +1315,15 @@ header.menu .hamburger-menu.active span:last-child {
 }
 .hero-slider .slick-prev:before, .hero-slider .slick-next:before{
   display: none;
+}
+.hero-slider .slick-next {
+  right: 25px;
+}
+.hero-slider .slick-prev {
+  left: 25px;
+}
+.hero-slider * {
+  line-height: 0;
 }
 
 .slider-shadow {
@@ -1651,6 +1659,18 @@ header.menu .hamburger-menu.active span:last-child {
     top: 50%;
     transform: translateY(-50%);
   }
+
+  .slick-slide {
+    transform: skew(-25deg) scale(1.1);
+  }
+
+  img.banner-img {
+    transform: skew(25deg) scale(1.5);
+  }
+
+  .logo-img {
+    transform: skew(25deg);
+  }
 }
 @media screen and (max-width: 1023px) {
   .menu-list{
@@ -1781,8 +1801,8 @@ header.menu .hamburger-menu.active span:last-child {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
   }
-  .lg\:mr-40{
-    margin-right: 10rem;
+  .lg\:mr-20{
+    margin-right: 5rem;
   }
   .lg\:mb-10{
     margin-bottom: 2.5rem;
@@ -1876,6 +1896,12 @@ header.menu .hamburger-menu.active span:last-child {
   }
 }
 @media (min-width: 1280px){
+  .xl\:mr-40{
+    margin-right: 10rem;
+  }
+  .xl\:ml-0{
+    margin-left: 0px;
+  }
   .xl\:inline-block{
     display: inline-block;
   }
